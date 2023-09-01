@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+*::after, *::before {
+    box-sizing: border-box;
+}
+span, a, label{
+    display: inline-block;
+}   
+.box {
+    max-width: 1100px;
+    margin: auto;
+}
+.btn {
+    padding: 10px 30px;
+    border: none;
+    background-color: rgb(255, 208, 0);
+    border: 3px solid orangered;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.kol {
+    border: 5px solid blue;
+    padding: 10px 30px;
+    position: relative;
+    overflow: hidden;
+}
+.ko {
+    transition: 1s all linear;
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    left: 15%;
+    top: 47%; 
+    z-index: -1;
+    background-color: orangered;
+    border-radius: 0 5px 5px 0;
+}
+.koa {
+    transition: 1s all linear;
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    left: 10%;
+    top: 47%; 
+    z-index: -1;
+    background-color: orangered;
+    border-radius: 0 5px 5px 0;
+}
+.koaa {
+    transition: 1s all linear;
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    left: 5%;
+    top: 47%; 
+    z-index: -1;
+    background-color: orangered;
+    border-radius: 0 5px 5px 0;
+}
+.Zombie {
+    transform: translateX(870px);
+    animation: mov 10s linear forwards infinite;
+}
+.Zombi {
+    transform: translateX(870px);
+    animation: mov 10s linear forwards infinite 2s;
+}
+.Zombiei {
+    transform: translateX(870px);
+    animation: mov 10s linear forwards infinite 3s;
+}
+.title {
+    z-index: 1;
+    font-size: 30px;
+    transition: 0.5s all linear;
+}
+.te {
+    animation: move 1s linear forwards infinite;
+}
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(1000px);
+    }
+}
+@keyframes mov {
+    0% {
+        transform: translateX(870px);
+    }
+    50% {
+        transform: translateX(500px);
+    }
+    60% {
+        transform: translateX(500px);
+    }
+    70% {
+        transform: translateX(500px);
+    }
+    80% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(300px) translateY(50px) rotate(110deg);
+    }
+}
